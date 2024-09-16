@@ -1,0 +1,22 @@
+{
+	"name": "blinky",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "ts-node-dev src/index.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@langchain/langgraph": "^0.0.33",
+		"@langchain/openai": "^0.2.5",
+		"ioredis": "^5.4.1",
+		"langchain": "^0.2.12",
+		"ts-jest": "^29.2.4",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.5.4"
+	}
+}
