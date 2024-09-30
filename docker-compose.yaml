@@ -1,6 +1,8 @@
 services:
     redis:
         build: ./infra/redis
+        ports:
+            - "6379:6379"
     blinky:
         build: ./src/personas/blinky
         ports:
@@ -11,6 +13,6 @@ services:
             - NODE_ENV=development
             - PORT=3000
         depends_on:
-            - redis 
+            - redis
         env_file:
             - .env
